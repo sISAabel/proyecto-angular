@@ -1,0 +1,39 @@
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1.5fr;
+  grid-template-rows: 0.1fr 2.1fr 0.05fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar button"
+    "navbar content"
+    "navbar footer";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.button {
+  background-color: coral;
+  grid-area: button;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content {
+  background-color: aqua;
+  padding: 1rem;
+  grid-area: content;
+}
+
+.footer {
+  background-color: blueviolet;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

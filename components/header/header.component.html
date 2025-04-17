@@ -1,17 +1,35 @@
 <header class="header">
-  <img [src]="src" alt="">
-  <nav>
-    <ul><li>Home</li>
-    <li>Proyectos</li>
-    <li>Sobre Mi</li>
-    <li>Mi experiencia</li></ul>
-  </nav>
-  <nav>
+  <img [src]="src" [alt]="alt" />
+  <nav id="menu">
     <ul>
-      <li>github</li>
-      <li>codepen</li>
-      <li>linkedn</li>
-      <li>youtube</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Sobre Mi</a></li>
+      <li><a href="/experiencia.html">Mi experiencia</a></li>
+    </ul>
+  </nav>
+  <nav id="redes-sociales">
+    <ul>
+      <li>
+        <a href="https://github.com/sISAabel"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://codepen.io/sisabel"
+          ><i class="fa-brands fa-codepen"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sisaabel/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@sisabel24"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </li>
     </ul>
   </nav>
 </header>
