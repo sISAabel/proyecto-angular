@@ -2,10 +2,30 @@
   <img [src]="src" [alt]="alt" />
   <nav id="menu">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Proyectos</a></li>
-      <li><a href="#">Sobre Mi</a></li>
-      <li><a href="/experiencia.html">Mi experiencia</a></li>
+      <li
+        [routerLinkActive]="['seleccionado']"
+        [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.home) }"
+      >
+        <a [routerLink]="['/home']">Home</a>
+      </li>
+      <li
+        [routerLinkActive]="['seleccionado']"
+        [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.proyectos) }"
+      >
+        <a [routerLink]="['/proyectos']">Proyectos</a>
+      </li>
+      <li
+        [routerLinkActive]="['seleccionado']"
+        [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.sobreMi) }"
+      >
+        <a [routerLink]="['/sobre-mi']">Sobre Mi</a>
+      </li>
+      <li
+        [routerLinkActive]="['seleccionado']"
+        [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.experiencia) }"
+      >
+        <a [routerLink]="['/experiencia']">Mi experiencia</a>
+      </li>
     </ul>
   </nav>
   <nav id="redes-sociales">

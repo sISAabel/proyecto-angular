@@ -3,11 +3,11 @@ import { LayoutComponent } from '../../../../components/layout/layout.component'
 import { AppRoute } from '../../types/AppRoute';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-contacto',
   imports: [LayoutComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './contacto.component.html',
+  styleUrl: './contacto.component.css'
 })
-export class HomeComponent {
+export class ContactoComponent {
   readonly AppRoute = AppRoute
 }
