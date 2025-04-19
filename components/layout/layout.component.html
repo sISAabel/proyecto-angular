@@ -1,7 +1,9 @@
 <div class="layout">
   <app-header [src]="src" class="navbar" [ruta]="ruta"></app-header>
   <div class="button">
-    <a [routerLink]="['/contacto']">Contáctame <i class="fa-solid fa-arrow-right"></i></a>
+    <div id="button">
+      <a [routerLink]="['/contacto']">Contáctame <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </div>
   <div class="content">
     <ng-content></ng-content>

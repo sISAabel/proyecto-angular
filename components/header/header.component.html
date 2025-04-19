@@ -1,30 +1,30 @@
 <header class="header">
-  <img [src]="src" [alt]="alt" />
+  <img [src]="src" [alt]="alt" id="foto"/>
   <nav id="menu">
     <ul>
       <li
         [routerLinkActive]="['seleccionado']"
         [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.home) }"
       >
-        <a [routerLink]="['/home']">Home</a>
+        <a [routerLink]="['/home']"> <i class="fa-solid fa-house"></i> Home</a>
       </li>
       <li
         [routerLinkActive]="['seleccionado']"
         [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.proyectos) }"
       >
-        <a [routerLink]="['/proyectos']">Proyectos</a>
+        <a [routerLink]="['/proyectos']"><i class="fa-brands fa-dev"></i> Proyectos</a>
       </li>
       <li
         [routerLinkActive]="['seleccionado']"
         [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.sobreMi) }"
       >
-        <a [routerLink]="['/sobre-mi']">Sobre Mi</a>
+        <a [routerLink]="['/sobre-mi']"><i class="fa-solid fa-book-open-reader"></i> Sobre Mi</a>
       </li>
       <li
         [routerLinkActive]="['seleccionado']"
         [routerLinkActiveOptions]="{ exact: estaActivo(AppRoute.experiencia) }"
       >
-        <a [routerLink]="['/experiencia']">Mi experiencia</a>
+        <a [routerLink]="['/experiencia']"><i class="fa-solid fa-chess-rook"></i> Mi experiencia</a>
       </li>
     </ul>
   </nav>
