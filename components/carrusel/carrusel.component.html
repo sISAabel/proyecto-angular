@@ -1,0 +1,31 @@
+<div class="carrusel">
+  <div class="carrusel__nav">
+    <span class="carrusel__arrow" (click)="moverIzquierda()">
+      <svg class="carrusel__icon" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+      </svg>
+    </span>
+    <span class="carrusel__arrow" (click)="moverDerecha()">
+      <svg class="carrusel__icon" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+      </svg>
+    </span>
+  </div>
+
+  <div
+    *ngFor="let item of carruselItems; let i = index"
+    class="carrusel-item carrusel-item--{{ i + 1 }}"
+    [ngClass]="{ active: i === indiceActual }"
+  >
+    <div class="carrusel-item__image"></div>
+    <div class="carrusel-item__info">
+      <div class="carrusel-item__container">
+        <h2 class="carrusel-item__subtitle">{{ item.subtitulo }}</h2>
+        <h1 class="carrusel-item__title">{{ item.titulo }}</h1>
+        <p class="carrusel-item__description">{{ item.descripcion }}</p>
+        <a href="#" class="carrusel-item__btn">{{ item.boton }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+

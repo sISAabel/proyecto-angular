@@ -1,0 +1,154 @@
+.carrusel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrusel-item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  flex-shrink: 0;
+  z-index: 0;
+  transition: 0.6s all linear;
+  visibility: hidden;
+  background-color: var(--background-footer);
+}
+
+.carrusel-item__image {
+  width: 60%;
+  height: 100%;
+  order: 2;
+  align-self: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(100%);
+  transition: 0.6s ease-in-out;
+}
+
+.carrusel-item__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  width: 40%;
+}
+
+.carrusel-item__subtitle,
+.carrusel-item__title,
+.carrusel-item__description,
+.carrusel-item__btn {
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out;
+}
+
+.carrusel-item__subtitle {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.carrusel-item__title {
+  font-size: 3rem;
+  color: var(--color-titulos);
+  margin: 1rem 0 0;
+  font-weight: 700;
+}
+
+.carrusel-item__description {
+  margin-top: 2.5rem;
+  margin-bottom: 2.8rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.carrusel-item__btn {
+  width: 35%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--color-texto);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.carrusel__nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: var(--background-footer);
+}
+
+.carrusel__arrow {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+.carrusel__arrow:first-child::after {
+  content: '';
+  right: -3px;
+  position: absolute;
+  width: 1px;
+  background-color: var(--color-texto);
+  height: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carrusel__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  fill: var(--color-texto)
+}
+
+.active {
+  visibility: visible;
+  z-index: 1;
+}
+
+.active .carrusel-item__image {
+  transform: translateX(0);
+}
+
+.active .carrusel-item__subtitle,
+.active .carrusel-item__title,
+.active .carrusel-item__description,
+.active .carrusel-item__btn {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.carrusel-item--1 .carrusel-item__image {
+  background-image: url('/assets/portafolio.png');
+}
+.carrusel-item--2 .carrusel-item__image {
+  background-image: url('/assets/electro.png');
+}
+.carrusel-item--3 .carrusel-item__image {
+  background-image: url('/assets/sisa-gyms.png');
+}
+.carrusel-item--4 .carrusel-item__image {
+  background-image: url('/assets/castillo-vino.png');
+}
+.carrusel-item--5 .carrusel-item__image {
+  background-image: url('/assets/drunky-ducks.png');
+}
+
+.carrusel-item--6 .carrusel-item__image {
+  background-image: url('/assets/fu-abogado.png');
+}
