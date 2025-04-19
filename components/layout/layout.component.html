@@ -7,7 +7,7 @@
     [ruta]="ruta"
   ></app-header>
   <div class="button">
-    <a [routerLink]="['/contacto']">Contáctame</a>
+    <a [routerLink]="['/contacto']" *ngIf="mostrarBoton">Contáctame</a>
   </div>
   <div class="content">
     <ng-content></ng-content>

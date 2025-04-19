@@ -46,10 +46,12 @@
   padding-right: 1.5rem;
   padding-left: 1rem;
 }
+
 .button a:hover:after {
   opacity: 1;
   right: 10px;
 }
+
 .button a:after {
   content: "\279C";
   opacity: 0;

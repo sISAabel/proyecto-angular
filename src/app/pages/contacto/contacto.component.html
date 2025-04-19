@@ -1,1 +1,30 @@
-<app-layout [ruta]="AppRoute.contcto"><p>contacto works!</p></app-layout>
+<app-layout src="logo.png" alt="logo de empresa" [ruta]="AppRoute.contcto" [mostrarBoton]= false>
+  <section>
+    <h1>Contacta Conmigo!</h1>
+    <form method="get">
+      <div>
+        <label for="nombre">Nombre y Apellido <i class="fa-solid fa-asterisk"></i></label>
+        <input type="text" name="nombre" id="nombre" minlength="5" required placeholder="Sara Rodríguez">
+      </div>
+      <div>
+        <label for="email">Email <i class="fa-solid fa-asterisk"></i></label>
+        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+      </div>
+      <div>
+        <label for="telefono">Teléfono <i class="fa-solid fa-asterisk"></i></label>
+        <input type="tel" name="telefono" id="telefono" minlength="9" pattern="[0-9]{10}" placeholder="123456789" required>
+      </div>
+      <div>
+        <label for="consulta">Consulta <i class="fa-solid fa-asterisk"></i></label>
+        <textarea name="consulta" id="consulta" maxlength="400" required placeholder="Limitado a 400 caracteres"></textarea>
+      </div>
+      <div>
+        <p>Los campos marcados con <i class="fa-solid fa-asterisk"></i> son obligatorios</p>
+      </div>
+      <div>
+        <button type="reset">Borrar <i class="fa-solid fa-trash"></i></button>
+        <button type="submit">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </section>
+</app-layout>
