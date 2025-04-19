@@ -11,5 +11,7 @@ import { RouterModule } from '@angular/router';
 })
 export class LayoutComponent {
   @Input() src: string = ''
+  @Input() alt: string = ''
+  @Input() imageWidth: number = 20
   @Input() ruta: AppRoute = AppRoute.experiencia
 }

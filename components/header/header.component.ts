@@ -11,11 +11,16 @@ import { AppRoute } from '../../src/app/types/AppRoute';
 export class HeaderComponent {
   @Input() src: string = ''
   @Input() alt: string = ''
+  @Input() imageWidth: number = 20
   @Input() ruta: AppRoute = AppRoute.sobreMi
 
   readonly AppRoute = AppRoute
 
   estaActivo(ruta: AppRoute): boolean {
     return this.ruta == ruta
+  }
+
+  obtenerAncho(): string {
+    return this.imageWidth + 'rem'
   }
 }

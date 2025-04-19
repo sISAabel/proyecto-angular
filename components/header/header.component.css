@@ -1,9 +1,11 @@
 header {
   background-color: var(--background-header);
   height: 100%;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 #foto {
@@ -34,8 +36,16 @@ nav#menu a:hover {
   color: var(--color-enfasis);
 }
 
+nav#menu ul {
+  padding: 0;
+}
+
 nav#menu li {
   margin-bottom: 1rem;
+}
+
+nav#redes-sociales {
+  width: 100%;
 }
 
 nav#redes-sociales ul {

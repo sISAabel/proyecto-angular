@@ -39,7 +39,41 @@ div#button {
   color: var(--color-secundario);
 }
 
-div.button a, div.button i {
+.button a {
+  width: 10rem;
+  height: 3rem;
+  color: var(--color-secundario);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  border: none;
+  background-color: #3d348b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button a:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.button a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.button a:after {
+  content: "\00BB";
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+div.button a {
   color: var(--color-secundario);
   text-decoration: none;
 }
