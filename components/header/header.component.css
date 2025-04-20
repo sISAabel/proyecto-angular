@@ -26,10 +26,10 @@ a, i {
   text-shadow: 0px 2px 5px rgba(0,0,0,0.54);
 }
 
-nav#menu a:hover {
-  font-size: 2.1rem;
+nav#menu li:hover {
+  transform: scale(1.1);
   transition: all 0.3s;
-  border-bottom: 5px solid;
+  border-bottom: 5px dashed var(--color-enfasis);
 }
 
 .seleccionado a, .seleccionado i{
@@ -60,7 +60,7 @@ nav#redes-sociales i {
 }
 
 nav#redes-sociales i:hover {
-  font-size: 2.6rem;
-  transition: all 0.3s;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
   color: var(--color-secundario);
 }

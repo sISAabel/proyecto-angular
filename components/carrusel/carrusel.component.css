@@ -17,7 +17,6 @@
   z-index: 0;
   transition: 0.6s all linear;
   visibility: hidden;
-  background-color: var(--background-footer);
 }
 
 .carrusel-item__image {
@@ -134,21 +133,21 @@
 }
 
 .carrusel-item--1 .carrusel-item__image {
-  background-image: url('/assets/portafolio.png');
+  background-image: url('/assets/proyectos/portafolio.png');
 }
 .carrusel-item--2 .carrusel-item__image {
-  background-image: url('/assets/electro.png');
+  background-image: url('/assets/proyectos/electro.png');
 }
 .carrusel-item--3 .carrusel-item__image {
-  background-image: url('/assets/sisa-gyms.png');
+  background-image: url('/assets/proyectos/sisa-gyms.png');
 }
 .carrusel-item--4 .carrusel-item__image {
-  background-image: url('/assets/tucalendi.png');
+  background-image: url('/assets/proyectos/tucalendi.png');
 }
 .carrusel-item--5 .carrusel-item__image {
-  background-image: url('/assets/drunky-ducks.png');
+  background-image: url('/assets/proyectos/drunky-ducks.png');
 }
 
 .carrusel-item--6 .carrusel-item__image {
-  background-image: url('/assets/fu-abogado.png');
+  background-image: url('/assets/proyectos/fu-abogado.png');
 }

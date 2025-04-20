@@ -18,50 +18,34 @@ article {
 }
 
 h1 {
+  font-family: var(--fuente-secundaria);
   color: var(--color-titulos);
   margin-bottom: 2rem;
 }
 
 .marquesina-tecnologias {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
   width: 100%;
-  background: var(--background-footer);
-  padding: 1rem 0;
+  height: 3rem;
+  background-color: var(--background-marquesina);
+  background-image: url('/assets/logos/tecnologias-sprite.png');
+  background-repeat: repeat-x;
+  background-size: auto 3rem;
+  animation: deslizar-fondo 30s linear infinite;
+  overflow: hidden;
   border-radius: 0.6rem;
-  max-width: 100%;
+  margin: 0 auto;
   position: relative;
 }
 
-.pista-tecnologias {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  animation: desplazamiento-izquierda 10s linear infinite;
-  will-change: transform;
-}
-
-.marquesina-tecnologias:hover .pista-tecnologias {
+.marquesina-tecnologias:hover {
   animation-play-state: paused;
 }
 
-.pista-tecnologias img {
-  flex-shrink: 0;
-  height: 3rem;
-  transition: transform 0.3s ease;
-}
-
-.pista-tecnologias img:hover {
-  transform: scale(1.5);
-}
-
-@keyframes desplazamiento-izquierda {
+@keyframes deslizar-fondo {
   0% {
-    transform: translateX(0);
+    background-position: 0 0;
   }
   100% {
-    transform: translateX(-50%);
+    background-position: 100% 0;
   }
 }
