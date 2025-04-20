@@ -30,10 +30,10 @@ export class CarruselComponent {
       boton: 'agosto 2021',
     },
     {
-      subtitulo: 'viñedo',
-      titulo: 'El Castillo del Vino',
-      descripcion: 'Sitio web de una bodega tradicional, enfocado en presentar la historia y esencia familiar del vino artesanal. Su diseño clásico y sobrio acompaña la narrativa del legado vinícola.',
-      boton: 'agosto 2021',
+      subtitulo: 'web de productividad',
+      titulo: 'TuCalendi.com',
+      descripcion: 'Un sistema de programación para reuniones y eventos para el web 3.0. TuCalendi es tu asistente personal online que trabaja para ti las 24 horas del día para llenar tu agenda y hacerte dueño de tu tiempo.',
+      boton: 'agosto 2022',
     },
     {
       subtitulo: 'blog de coctelería',

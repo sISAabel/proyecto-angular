@@ -12,8 +12,56 @@ article {
   font-size: 2rem;
 }
 
-#titulaciones p {
-  font-size: 1.5rem;
-  font-weight: bold;
+#tecnologias {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
   color: var(--color-titulos);
+  margin-bottom: 2rem;
+}
+
+.marquesina-tecnologias {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--background-footer);
+  padding: 1rem 0;
+  border-radius: 0.6rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.pista-tecnologias {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  animation: desplazamiento-izquierda 10s linear infinite;
+  will-change: transform;
+}
+
+.marquesina-tecnologias:hover .pista-tecnologias {
+  animation-play-state: paused;
+}
+
+.pista-tecnologias img {
+  flex-shrink: 0;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.pista-tecnologias img:hover {
+  transform: scale(1.5);
+}
+
+@keyframes desplazamiento-izquierda {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
